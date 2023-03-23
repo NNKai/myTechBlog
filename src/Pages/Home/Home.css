@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto&family=Ubuntu&display=swap");
+.home {
+  padding: 74px 0 0;
+}
+.home .homepage_HeroImg {
+  width: 90%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.home .homepage_HeroImg img {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 12px black;
+}
+.home .homepage_Featured {
+  background-color: #081a41;
+  width: 100%;
+  margin: 0 auto;
+  margin: 12px auto;
+  box-shadow: 0 0 12px black;
+}
+.home .homepage_Featured .featured_Container {
+  padding: 12px;
+}
+.home .homepage_Featured .featured_Container a {
+  text-decoration: none;
+}
+.home .homepage_Featured .featured_Container a h3 {
+  color: #D4E4E3;
+  font-family: Nunito Sans, sans-serif, Roboto, Ubuntu;
+  font-weight: 400;
+}
+.home .homepage_Featured .featured_Container .homepage_Title {
+  margin: 12px auto;
+  display: flex;
+  margin-top: 0;
+}
+.home .homepage_Featured .featured_Container .homepage_Title h3 {
+  color: #D4E4E3;
+  font-family: Nunito Sans, sans-serif, Roboto, Ubuntu;
+  font-weight: 400;
+}
+.home .homepage_Featured .featured_Container .item .item_Container a {
+  margin: 12px auto;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px dotted #D4E4E3;
+  padding: 12px 0;
+  text-decoration: none;
+  font-family: Nunito Sans, sans-serif, Roboto, Ubuntu;
+}
+.home .homepage_Featured .featured_Container .item .item_Container a .blog_Image {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+.home .homepage_Featured .featured_Container .item .item_Container a .blog_Image img {
+  width: 100%;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 0 6px black;
+}
+.home .homepage_Featured .featured_Container .item .item_Container a .blog_Detail {
+  width: 55%;
+}
+.home .homepage_Featured .featured_Container .item .item_Container a .blog_Detail h3 {
+  font-size: 16px;
+  margin: 0;
+  color: #D4E4E3;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.home .homepage_Featured .featured_Container .item .item_Container a p {
+  font-size: 12px;
+  margin: 0 0 12px;
+  color: #D4E4E3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.home .homepage_Featured .featured_Container .item .item_Container a span p {
+  font-size: 10px;
+  margin: 0 0 12px;
+  color: lightgray;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}/*# sourceMappingURL=Home.css.map */

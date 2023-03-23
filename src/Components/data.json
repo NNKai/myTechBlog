@@ -1,0 +1,44 @@
+{
+    "blogs" : [
+        {
+            "id" : "1",
+            "title" : "My Blog",
+            "date" : "03-22-2023",
+            "price" : "$29.99",
+            "image" : "https://www.netscribes.com/wp-content/uploads/2019/06/Technology-Watch.jpg",
+            "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id" : "2",
+            "title" : "My Blog",
+            "date" : "03-22-2023",
+            "price" : "$29.99",
+            "image" : "https://www.netscribes.com/wp-content/uploads/2019/06/Technology-Watch.jpg",
+            "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id" : "3",
+            "title" : "My adasdasdsssdaasdBlog",
+            "date" : "03-22-2023",
+            "price" : "$29.99",
+            "image" : "https://www.netscribes.com/wp-content/uploads/2019/06/Technology-Watch.jpg",
+            "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id" : "4",
+            "title" : "My Blog",
+            "date" : "03-22-2023",
+            "price" : "$29.99",
+            "image" : "https://www.netscribes.com/wp-content/uploads/2019/06/Technology-Watch.jpg",
+            "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id" : "5",
+            "title" : "My Blog",
+            "date" : "03-22-2023",
+            "price" : "$29.99",
+            "image" : "https://www.netscribes.com/wp-content/uploads/2019/06/Technology-Watch.jpg",
+            "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+    ]
+}
