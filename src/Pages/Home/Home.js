@@ -3,12 +3,14 @@ import './Home.css'
 import Hero from '../../Images/Blue And White Modern Metaverse Instagram Post.png'
 import data from '../../Components/data.json'
 import { Link } from 'react-router-dom'
+import Sidebar from '../../Components/Sidebar/Sidebar'
 
 const Home = () => {
 
   console.log(data.blogs)
   return (
     <div className='home'>
+        <Sidebar/>
         <div className='homepage_HeroImg'>
           <img src={Hero} alt='hero'></img>
         </div>

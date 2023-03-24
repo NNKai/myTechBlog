@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto&family=Ubuntu&display=swap');
+
+
+$PrimaryFontColor : #D4E4E3;
+$FeaturedBackgroundColor : #081a41;
+$PrimaryFont: Nunito Sans, sans-serif,Roboto, Ubuntu;
+
+.sidebar{
+    display: none;
+}
+
+@media  (min-width : 768px) {
+    .sidebar{
+        display:block;
+        width: 30%;
+        border-right: 2px solid darkgray;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0px 36px 16px;
+            margin: 0;
+            line-height: 36px;
+            a{
+                text-decoration: none;
+                color:black;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                box-shadow: 0 0 12px 0 black; 
+                margin: 12px;
+                background-color: goldenrod;
+                font-size: 16px;
+                font-weight: 700;
+                font-family: $PrimaryFont;
+            }
+            a:hover {
+                position: relative;
+                bottom: 12px;
+                left: 12px;
+                background-color: darkgoldenrod;
+                color: white;
+            }
+            
+        }
+    }
+    
+}
+
+@media  (min-width : 1280px) {
+    .sidebar{
+        width: 25%;
+        border-right: none;
+        ul{
+            padding: 0;
+            a{
+                height: 100px;
+                align-items: center;
+                font-size: 24px;
+            }
+        }
+    }
+}

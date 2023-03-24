@@ -119,3 +119,111 @@ $PrimaryFont: Nunito Sans, sans-serif,Roboto, Ubuntu;
         }
     }
 }
+
+@media (min-width : 768px) {
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 108px 0 0;
+        .homepage_HeroImg{
+            width: 50%;
+        }
+   
+    .homepage_Featured{
+        margin: 24px auto;
+        
+        .featured_Container{
+            .item{
+                padding: 0 24px;
+                // background-color: pink;
+                .item_Container{
+                    
+                    a{
+                        .blog_Image {
+                            img{
+                                height: 200px;
+                            }
+                        }
+                        .blog_Detail{
+                            h3{
+                                font-size: 20px;
+                            }
+                            p{
+                                font-size: 16px;
+                                
+                                
+                            }
+                            span{
+                                p{
+                                    font-size: 14px;
+                                    
+                        
+                            }
+                        }
+                        }
+                }
+            
+            }
+        }
+    }
+    
+}
+}
+}
+
+@media (min-width : 1280px) {
+    .home{
+        padding-top: 120px;
+        justify-content: space-around;
+        align-items: flex-start;
+        .homepage_HeroImg{
+            width: 35%;
+            margin: 0;
+            height: 762px;
+            img{
+                height: 762px;
+                
+            }
+            
+        }
+        .homepage_Featured{
+            width: 35%;
+            margin: 0;
+            height: 762px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: scroll;
+            border-radius: 10px;
+            .featured_Container{
+                .homepage_Title{
+                    h3{
+                        font-size: 24px;
+                    }
+                }
+                .item{
+                    padding: 0 24px;
+                    // background-color: pink;
+                    .item_Container{
+                        
+                        a{
+                            .blog_Image {
+                                img{
+                                    height: 150px;
+                                }
+                                 :hover{
+                                position: relative;
+                                bottom: 12px;
+                                left: 12px;
+                            }
+                            }
+                           
+                        }
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+}

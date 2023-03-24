@@ -4,8 +4,8 @@ header{
     justify-content: space-between;
     height: 60px;
     position: fixed;
-    background-color: #FCECE4 ;
-    color: black;
+    background-color: indigo ;
+    color: white;
     width: 100%;
     box-shadow: 0 0 12px black;
     .cart{
@@ -29,7 +29,7 @@ header{
     nav {
         a{
             margin: 0 2rem;
-            color: black;
+            color: white;
             text-decoration: none;
         }
         a:hover {
@@ -42,7 +42,7 @@ header{
         background: transparent;
         border: none;
         outline: none;
-        color: black;
+        color: white;
         visibility: hidden;
         opacity: 0;
         font-size: 1.8rem;
@@ -89,7 +89,7 @@ header{
         }
         .responsive_nav {
             transform: none;
-            background-color: #FCECE4;
+            background-color: indigo;
         }
     }
 };
@@ -97,6 +97,10 @@ header{
 @media  (min-width : 768px) {
     header {
        justify-content: space-between;
+       height: 80px;
+       .logo{
+        width: 70%;
+       }
        nav {
         .nav-close-btn{
             position: absolute;
@@ -124,6 +128,9 @@ header{
         nav {
             display: flex;
             align-items: center;
+            a{
+                font-size: 24px;
+            }
         }
         span{ 
             display: none;
