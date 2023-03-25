@@ -174,7 +174,7 @@ $PrimaryFont: Nunito Sans, sans-serif,Roboto, Ubuntu;
 
 @media (min-width : 1280px) {
     .home{
-        padding-top: 120px;
+        padding-top: 136px;
         justify-content: space-around;
         align-items: flex-start;
         .homepage_HeroImg{
@@ -185,6 +185,9 @@ $PrimaryFont: Nunito Sans, sans-serif,Roboto, Ubuntu;
                 height: 762px;
                 
             }
+            :hover{
+                transform: scale(1.02);
+            }
             
         }
         .homepage_Featured{
@@ -193,12 +196,16 @@ $PrimaryFont: Nunito Sans, sans-serif,Roboto, Ubuntu;
             height: 762px;
             text-overflow: ellipsis;
             white-space: nowrap;
-            overflow: scroll;
+            overflow-y:auto;
             border-radius: 10px;
+            
             .featured_Container{
+                
                 .homepage_Title{
+                   
                     h3{
                         font-size: 24px;
+                        padding: 6px 24px
                     }
                 }
                 .item{
@@ -224,6 +231,9 @@ $PrimaryFont: Nunito Sans, sans-serif,Roboto, Ubuntu;
                 }
                 
             }
+            
         }
+        
     }
+    
 }

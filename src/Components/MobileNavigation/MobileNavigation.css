@@ -8,6 +8,7 @@ header {
   color: white;
   width: 100%;
   box-shadow: 0 0 12px black;
+  z-index: 2;
 }
 header .cart {
   display: flex;
@@ -113,6 +114,8 @@ header .nav-btn {
   header {
     height: 100px;
     justify-content: space-between;
+    opacity: 0.85;
+    z-index: 1;
   }
   header .nav-btn {
     display: none;

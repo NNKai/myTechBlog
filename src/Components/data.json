@@ -6,7 +6,10 @@
             "date" : "03-22-2023",
             "price" : "$29.99",
             "image" : "https://www.netscribes.com/wp-content/uploads/2019/06/Technology-Watch.jpg",
-            "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "category" : "Laptops",
+            "featured" : true,
+            "Review" : "While it's unclear the exact number of people impacted, it's a reminder to be cautious when using ChatGPT and other new AI tools, many of which are still in beta or testing phases. OpenAI on Friday said it has notified affected users that their payment information may have been exposed. "
         },
         {
             "id" : "2",
@@ -14,7 +17,10 @@
             "date" : "03-22-2023",
             "price" : "$29.99",
             "image" : "https://www.netscribes.com/wp-content/uploads/2019/06/Technology-Watch.jpg",
-            "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "category" : "Smart Phones",
+            "featured" : true,
+            "Review" : ""
         },
         {
             "id" : "3",
@@ -22,7 +28,10 @@
             "date" : "03-22-2023",
             "price" : "$29.99",
             "image" : "https://www.netscribes.com/wp-content/uploads/2019/06/Technology-Watch.jpg",
-            "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "category" : "Accessories",
+            "featured" : true,
+            "Review" : ""
         },
         {
             "id" : "4",
@@ -30,7 +39,9 @@
             "date" : "03-22-2023",
             "price" : "$29.99",
             "image" : "https://www.netscribes.com/wp-content/uploads/2019/06/Technology-Watch.jpg",
-            "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "category" : "Build Your PC",
+            "Review" : ""
         },
         {
             "id" : "5",
@@ -38,7 +49,20 @@
             "date" : "03-22-2023",
             "price" : "$29.99",
             "image" : "https://www.netscribes.com/wp-content/uploads/2019/06/Technology-Watch.jpg",
-            "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "category" : "Games",
+            "Review" : ""
+        },
+        {
+            "id" : "6",
+            "title" : "My Blog",
+            "date" : "03-22-2023",
+            "price" : "$29.99",
+            "image" : "https://www.netscribes.com/wp-content/uploads/2019/06/Technology-Watch.jpg",
+            "summary" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "category" : "New Gadgets",
+            "Review" : ""
         }
+
     ]
 }

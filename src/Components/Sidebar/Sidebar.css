@@ -26,7 +26,7 @@
     justify-content: center;
     box-shadow: 0 0 12px 0 black;
     margin: 12px;
-    background-color: goldenrod;
+    background-color: rgb(50, 130, 250);
     font-size: 16px;
     font-weight: 700;
     font-family: Nunito Sans, sans-serif, Roboto, Ubuntu;
@@ -35,7 +35,7 @@
     position: relative;
     bottom: 12px;
     left: 12px;
-    background-color: darkgoldenrod;
+    background-color: rgb(0, 67, 130);
     color: white;
   }
 }

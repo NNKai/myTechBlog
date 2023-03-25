@@ -1,19 +1,17 @@
-import React, { useEffect, useState } from 'react'
-import './Home.css'
-import Hero from '../../Images/Blue And White Modern Metaverse Instagram Post.png'
-import data from '../../Components/data.json'
+import React, { useState, useEffect } from 'react'
+import './AllReview.css'
 import { Link } from 'react-router-dom'
-import Sidebar from '../../Components/Sidebar/Sidebar'
+import data from '../../Components/data.json'
 
-const Home = () => {
+const AllReview = () => {
 
-  const [featuredData, setFeaturedData] = useState()
+    const [allData, setAllData] = useState()
 
-  const filterData = () =>{ 
-    const filteredData = data.blogs.filter(data => data.featured === true)
-    console.log(filteredData)
-    setFeaturedData(filteredData)
-  }
+    const filterData = () =>{ 
+        const filteredData = data.blogs
+        console.log(filteredData)
+        setAllData(filteredData)
+    }
 
   useEffect (()=> {
     filterData()
@@ -21,21 +19,15 @@ const Home = () => {
 
 
 
-
   return (
-    <div className='home'>
-        <Sidebar/>
-        <div className='homepage_HeroImg'>
-          <img src={Hero} alt='hero'></img>
-        </div>
-        <div className='homepage_Featured'>
-            <div className='featured_Container'>
-                <div className='homepage_Title'>
-                    <h3>Top Stories</h3>
+    <div className='allReviews'>
+        <div className='reviews_Container'>
+        <div className='homepage_Title'>
+                    <h3>All Blogs</h3>
                 </div>
                 <hr/>
                 <div className='item'>
-                    {featuredData ?  featuredData.map((blog)=>{
+                    {allData ?  allData.map((blog)=>{
                       return (
                         <div className='item_Container' key={blog.id}>
                           <Link to={'/' + blog.id} >
@@ -54,13 +46,10 @@ const Home = () => {
                       )
                     }): <h3>Loading...</h3>}
                 </div>
-                <Link to='/reviews'><h3>View All</h3></Link>
-            </div>
-            
         </div>
-
+        
     </div>
   )
 }
 
-export default Home
+export default AllReview

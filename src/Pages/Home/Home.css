@@ -129,7 +129,7 @@
 }
 @media (min-width: 1280px) {
   .home {
-    padding-top: 120px;
+    padding-top: 136px;
     justify-content: space-around;
     align-items: flex-start;
   }
@@ -141,17 +141,21 @@
   .home .homepage_HeroImg img {
     height: 762px;
   }
+  .home .homepage_HeroImg :hover {
+    transform: scale(1.02);
+  }
   .home .homepage_Featured {
     width: 35%;
     margin: 0;
     height: 762px;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: scroll;
+    overflow-y: auto;
     border-radius: 10px;
   }
   .home .homepage_Featured .featured_Container .homepage_Title h3 {
     font-size: 24px;
+    padding: 6px 24px;
   }
   .home .homepage_Featured .featured_Container .item {
     padding: 0 24px;

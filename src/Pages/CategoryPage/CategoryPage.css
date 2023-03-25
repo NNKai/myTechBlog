@@ -1,0 +1,136 @@
+.category_Container {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 12px black;
+  margin-bottom: 60px;
+}
+.category_Container .reviews_Container {
+  position: relative;
+  top: 60px;
+  margin-bottom: 60px;
+  min-height: 100vh;
+  padding: 12px;
+  background-color: #081a41;
+}
+.category_Container .reviews_Container a {
+  text-decoration: none;
+}
+.category_Container .reviews_Container a h3 {
+  color: #D4E4E3;
+  font-family: Nunito Sans, sans-serif, Roboto, Ubuntu;
+  font-weight: 400;
+}
+.category_Container .reviews_Container .homepage_Title {
+  margin: 12px auto;
+  display: flex;
+  margin-top: 0;
+}
+.category_Container .reviews_Container .homepage_Title h3 {
+  color: #D4E4E3;
+  font-family: Nunito Sans, sans-serif, Roboto, Ubuntu;
+  font-weight: 400;
+}
+.category_Container .reviews_Container .item .item_Container a {
+  margin: 12px auto;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px dotted #D4E4E3;
+  padding: 12px 0;
+  text-decoration: none;
+  font-family: Nunito Sans, sans-serif, Roboto, Ubuntu;
+}
+.category_Container .reviews_Container .item .item_Container a .blog_Image {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+.category_Container .reviews_Container .item .item_Container a .blog_Image img {
+  width: 100%;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 0 6px black;
+}
+.category_Container .reviews_Container .item .item_Container a .blog_Detail {
+  width: 55%;
+}
+.category_Container .reviews_Container .item .item_Container a .blog_Detail h3 {
+  font-size: 16px;
+  margin: 0;
+  color: #D4E4E3;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.category_Container .reviews_Container .item .item_Container a p {
+  font-size: 12px;
+  margin: 0 0 12px;
+  color: #D4E4E3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.category_Container .reviews_Container .item .item_Container a span p {
+  font-size: 10px;
+  margin: 0 0 12px;
+  color: lightgray;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .category_Container {
+    margin-bottom: 80px;
+  }
+  .category_Container .reviews_Container {
+    top: 80px;
+  }
+  .category_Container .reviews_Container .item {
+    padding: 0 24px;
+  }
+  .category_Container .reviews_Container .item .item_Container a .blog_Image img {
+    height: 200px;
+  }
+  .category_Container .reviews_Container .item .item_Container a .blog_Detail h3 {
+    font-size: 20px;
+  }
+  .category_Container .reviews_Container .item .item_Container a .blog_Detail p {
+    font-size: 16px;
+  }
+  .category_Container .reviews_Container .item .item_Container a .blog_Detail span p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1280px) {
+  .category_Container {
+    margin: 0;
+    margin-bottom: 100px;
+  }
+  .category_Container .reviews_Container {
+    top: 100px;
+  }
+  .category_Container .reviews_Container .homepage_Title h3 {
+    font-size: 24px;
+    padding: 6px 24px;
+  }
+  .category_Container .reviews_Container .item {
+    padding: 0 24px;
+  }
+  .category_Container .reviews_Container .item .item_Container a .blog_Image {
+    width: 30%;
+  }
+  .category_Container .reviews_Container .item .item_Container a .blog_Image img {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .category_Container .reviews_Container .item .item_Container a .blog_Image :hover {
+    position: relative;
+    bottom: 12px;
+    left: 12px;
+  }
+}/*# sourceMappingURL=CategoryPage.css.map */

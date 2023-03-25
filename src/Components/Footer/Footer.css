@@ -1,0 +1,14 @@
+.footer {
+  margin-top: 12px;
+  width: 100%;
+  height: 100px;
+  background-color: indigo;
+  opacity: 0.9;
+}
+
+@media (min-width: 1280px) {
+  .footer {
+    margin-top: 36px;
+    height: 132px;
+  }
+}/*# sourceMappingURL=Footer.css.map */

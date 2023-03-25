@@ -1,0 +1,207 @@
+$PrimaryFontColor : #D4E4E3;
+$FeaturedBackgroundColor : #081a41;
+$PrimaryFont: Nunito Sans, sans-serif,Roboto, Ubuntu;
+
+// .category_Container{
+//     margin-bottom: 60px;
+//     .reviews_Container{
+//         position: relative;
+//         top: 60px;
+//         background-color: white;
+//         opacity: 0.8;
+//         min-height: 100vh;
+//     }
+// }
+
+.category_Container{
+    
+    width: 100%;
+    
+    margin: 0 auto;
+    // border-radius: 10px;
+    // margin: 12px auto;
+    box-shadow: 0 0 12px black;
+    margin-bottom: 60px;
+    .reviews_Container{
+        position: relative;
+        top: 60px;
+        margin-bottom: 60px;
+        min-height: 100vh;
+        padding: 12px;
+        background-color: $FeaturedBackgroundColor;
+        a{
+            text-decoration: none;
+            h3{
+                color: $PrimaryFontColor;
+                font-family: $PrimaryFont;
+                font-weight: 400;
+            }
+        }
+        .homepage_Title{
+            
+            // background-color: pink;
+            margin: 12px auto;
+            display: flex;
+            
+            margin-top: 0;
+            h3{
+                color: $PrimaryFontColor;
+                font-family: $PrimaryFont;
+                font-weight: 400;
+            }
+        }
+        .item{
+            
+            // background-color: pink;
+            .item_Container{
+                
+                a{
+                    margin: 12px auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    border-bottom: 1px dotted $PrimaryFontColor;
+                    padding: 12px 0; 
+                    text-decoration: none;
+                    font-family: $PrimaryFont;
+                    .blog_Image{
+                        width: 40%;
+                        display: flex;
+                        align-items: center;
+                        margin-right: 12px;
+                        img{
+                            width: 100%;
+                            height: 100px;
+                            object-fit: cover;
+                            box-shadow: 0 0 6px black;
+                        }
+                    }
+                    .blog_Detail{
+                        width: 55%;
+                        h3{
+                            font-size: 16px;
+                            margin: 0;
+                            color: $PrimaryFontColor;
+                            font-weight: 400;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+                        }
+                        p{
+                            font-size: 12px;
+                            margin: 0 0 12px;
+                            color: $PrimaryFontColor;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            
+                        }
+                        span{
+                            p{
+                                font-size: 10px;
+                                margin: 0 0 12px;
+                                color: lightgray;
+                                font-weight: 700;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                    
+                        }
+                    }
+            }
+                   
+        }  
+        }
+    }
+}
+
+@media (min-width : 768px) {
+
+.category_Container{
+   
+    margin-bottom: 80px;
+    .reviews_Container{
+        top: 80px;
+        .item{
+            padding: 0 24px;
+            // background-color: pink;
+            .item_Container{
+                
+                a{
+                    .blog_Image {
+                        img{
+                            height: 200px;
+                        }
+                    }
+                    .blog_Detail{
+                        h3{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 16px;
+                            
+                            
+                        }
+                        span{
+                            p{
+                                font-size: 14px;
+                                
+                    
+                        }
+                    }
+                    }
+            }
+        
+        }
+    }
+}
+
+}
+}
+
+@media (min-width : 1280px) {
+    .category_Container{
+        
+        margin: 0;
+    
+       
+        margin-bottom: 100px;
+        .reviews_Container{
+            top: 100px;
+            .homepage_Title{
+               
+                h3{
+                    font-size: 24px;
+                    padding: 6px 24px
+                }
+            }
+            .item{
+                padding: 0 24px;
+                // background-color: pink;
+                .item_Container{
+                    
+                    a{
+                        .blog_Image {
+                            width: 30%;
+                            img{
+                                height: 300px;
+                                object-fit: cover;
+                                
+                            }
+                             :hover{
+                            position: relative;
+                            bottom: 12px;
+                            left: 12px;
+                        }
+                        }
+                       
+                    }
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+}
