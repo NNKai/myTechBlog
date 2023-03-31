@@ -27,11 +27,15 @@ const MobileNavigation = () => {
         </button>
         <nav ref={navRef}>
         <Link to="/" onClick={showNavbar}><img src={Logo2} alt=''></img></Link>
-            <Link to="/reviews" onClick={showNavbar} >Reviews</Link>
-            {/* <Link to="/womens" onClick={showNavbar}>Women's Collection</Link>
-            <Link to="/accessories" onClick={showNavbar}>Jewelery</Link> */}
-            {/* <span><Link to="/cart" onClick={showNavbar}>Cart({items.length})</Link></span> */}
+        <span><Link to="/category/Laptops" onClick={showNavbar}>Laptops</Link>
+            <Link to="/category/Smart Phones" onClick={showNavbar}>Smart Phones</Link>
+            <Link to="/category/Accessories" onClick={showNavbar}>Accessories</Link>
+            {/* <Link to="/category/Build Your PC"  onClick={showNavbar}>Build Your PC</Link>
+            <Link to="/category/Games" onClick={showNavbar}>Games</Link> */}
+            <Link to="/category/New Gadgets"  onClick={showNavbar}>New Gadgets</Link></span> 
+            <Link to="/reviews" onClick={showNavbar} >All Reviews</Link>
             <Link to="/aboutus" onClick={showNavbar}>About us</Link>
+           
             <button className='nav-btn nav-close-btn' onClick={showNavbar}>
                 <FaTimes />
             </button>

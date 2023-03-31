@@ -1,3 +1,7 @@
+h4{
+    font-size: 14px;
+}
+
 .detail_Page{
     background-color: rgb(255, 255, 255, 0.8);
     min-height: 100vh;
@@ -14,24 +18,105 @@
         h3{
             margin: 0;
            padding-top: 12px;
-           font-size: 16px;
+           font-size: 18px;
         }
         img{
             width: 100%;
             min-height: 250px;
             object-fit: cover;
             box-shadow: 0 6px 12px black;
+            margin-bottom: 12px;
+        }
+        .second_Image{
+            display: none;
         }
         p{
             padding: 12px;
             margin: 0;
             font-size: 14px;
         }
+
+        span{
+            p{
+                padding: 16px 12px;
+                line-height: 24px;
+            }
+        }
+        
+        .details_Comparison{
+        
+            .price{
+                .price_Container{
+                    width: 90%;
+                    margin: 0 auto;
+                    img{
+                        height: 350px;
+                        margin: 0;
+                    }
+                    p{
+                        padding: 12px 12px 24px;
+                        text-align: center;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .storage{
+                
+                background-color: rgb(235, 235, 235);
+                .storage_Container{
+                    width: 90%;
+                    margin: 0 auto;
+                    p{
+                        padding: 0 0 12px;
+                    }
+                }
+            }
+            .display{
+                background-color: white;
+                padding-bottom: 16px;
+                .display_Container{
+                    width: 90%;
+                    margin: 0 auto;
+                    
+                    p{
+                        padding: 12px 0;
+                    }
+                }
+            }
+            .dimensionsAndWeight{
+                
+                background-color: rgb(235, 235, 235);
+                h3{
+                    padding: 12px
+                }
+                .dimensionsAndWeight_Container{
+                    // display: flex;
+                    // flex-direction: column;
+                    // align-items: flex-start;
+                    
+                    width: 90%;
+                    margin: 0 auto;
+                    margin-top: 12px;
+                    p{
+                        padding: 12px 0;
+                    }
+                    img{
+                        
+                        height: 350px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
     }
+    
 }
 h3{
     margin: 0;
+    padding: 12px;
 }
+
+
 
 @media (min-width : 768px) {
     .detail_Page{
@@ -49,6 +134,88 @@ h3{
             }
             img{
                 min-height: 450px;
+            }
+            .details_Comparison{
+                .price{
+                    display: flex;
+                    flex-wrap: wrap;
+                    h3{
+                        width: 100%;
+                    }
+                    .price_Container{
+                        width: 40%;
+                        margin: 0 auto;
+                        img{
+                            min-height: 400px;
+                            margin: 0 auto;
+                        }
+                        h4{
+                            text-align: center;
+                        }
+                        p{
+                            padding: 12px 12px 24px;
+                            text-align: center;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .storage{
+                    
+                    
+                    .storage_Container{
+                        width: 60%;
+                        margin: 0 auto;
+                        p{
+                            padding: 0 0 12px;
+                        }
+                    }
+                }
+                .display{
+                    
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    h3{
+                        width: 100%;
+                    }
+                    .display_Container{
+                        width: 40%;
+                        margin: 12px;
+                        box-shadow: 0 0 12px;
+                        padding: 12px;
+                        p{
+                            padding: 12px 0;
+                        }
+                    }
+                }
+                .dimensionsAndWeight{
+                 
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    h3{
+                        padding: 12px;
+                        width: 100%;
+                    }
+                    .dimensionsAndWeight_Container{
+                        // display: flex;
+                        // flex-direction: column;
+                        // align-items: flex-start;
+                        
+                        width: 40%;
+                        margin: 0 auto;
+                        margin-top: 12px;
+                        p{
+                            padding: 12px 0;
+                        }
+                        img{
+                            
+                            min-height: 400px;
+                            margin: 0 auto;
+                        }
+                    }
+                }
             }
         }
     }
@@ -74,6 +241,13 @@ h3{
             }
             img{
                 width: 40%;
+                height: 500px;
+            }
+            .second_Image{
+                display: block;
+                img{
+                    height: 500px;
+                }
             }
             .placement{
                 width: 40%;
@@ -87,6 +261,106 @@ h3{
                     line-height: 36px;
                 }
             }
+            .details_Comparison{
+                .price{
+                    display: flex;
+                    flex-wrap: wrap;
+                    h3{
+                        width: 100%;
+                    }
+                    .price_Container{
+                        width: 40%;
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                        img{
+                            min-height: 600px;
+                            margin: 0 auto;
+                            width: 60%;
+                        }
+                        h4{
+                            text-align: center;
+                        }
+                        p{
+                            padding: 12px 12px 24px;
+                            text-align: center;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .storage{
+                    
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding-bottom: 16px;
+                    .storage_Container{
+                        
+                        margin: 0 auto;
+                        width: 25%;
+                        margin: 12px;
+                        box-shadow: 0 0 12px;
+                        padding: 12px;
+                        p{
+                            padding: 0 0 12px;
+                        }
+                    }
+                }
+                .display{
+                  
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    h3{
+                        width: 100%;
+                    }
+                    .display_Container{
+                        width: 25%;
+                        margin: 12px;
+                        box-shadow: 0 0 12px;
+                        padding: 12px;
+                        p{
+                            padding: 12px 0;
+                        }
+                    }
+                }
+                .dimensionsAndWeight{
+                  
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    h3{
+                        padding: 12px;
+                        width: 100%;
+                    }
+                    .dimensionsAndWeight_Container{
+                        // display: flex;
+                        // flex-direction: column;
+                        // align-items: flex-start;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 40%;
+                        margin: 0 auto;
+                        margin-top: 12px;
+                        p{
+                            padding: 12px 0;
+                        }
+                        img{
+                            
+                            min-height: 600px;
+                            margin: 0 auto;
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        
         }
     }
 }

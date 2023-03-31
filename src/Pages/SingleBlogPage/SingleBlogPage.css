@@ -1,3 +1,7 @@
+h4 {
+  font-size: 14px;
+}
+
 .detail_Page {
   background-color: rgba(255, 255, 255, 0.8);
   min-height: 100vh;
@@ -15,7 +19,7 @@
 .detail_Page .details_Container h3 {
   margin: 0;
   padding-top: 12px;
-  font-size: 16px;
+  font-size: 18px;
 }
 .detail_Page .details_Container img {
   width: 100%;
@@ -23,15 +27,76 @@
   -o-object-fit: cover;
      object-fit: cover;
   box-shadow: 0 6px 12px black;
+  margin-bottom: 12px;
+}
+.detail_Page .details_Container .second_Image {
+  display: none;
 }
 .detail_Page .details_Container p {
   padding: 12px;
   margin: 0;
   font-size: 14px;
 }
+.detail_Page .details_Container span p {
+  padding: 16px 12px;
+  line-height: 24px;
+}
+.detail_Page .details_Container .details_Comparison .price .price_Container {
+  width: 90%;
+  margin: 0 auto;
+}
+.detail_Page .details_Container .details_Comparison .price .price_Container img {
+  height: 350px;
+  margin: 0;
+}
+.detail_Page .details_Container .details_Comparison .price .price_Container p {
+  padding: 12px 12px 24px;
+  text-align: center;
+  font-weight: 700;
+}
+.detail_Page .details_Container .details_Comparison .storage {
+  background-color: rgb(235, 235, 235);
+}
+.detail_Page .details_Container .details_Comparison .storage .storage_Container {
+  width: 90%;
+  margin: 0 auto;
+}
+.detail_Page .details_Container .details_Comparison .storage .storage_Container p {
+  padding: 0 0 12px;
+}
+.detail_Page .details_Container .details_Comparison .display {
+  background-color: white;
+  padding-bottom: 16px;
+}
+.detail_Page .details_Container .details_Comparison .display .display_Container {
+  width: 90%;
+  margin: 0 auto;
+}
+.detail_Page .details_Container .details_Comparison .display .display_Container p {
+  padding: 12px 0;
+}
+.detail_Page .details_Container .details_Comparison .dimensionsAndWeight {
+  background-color: rgb(235, 235, 235);
+}
+.detail_Page .details_Container .details_Comparison .dimensionsAndWeight h3 {
+  padding: 12px;
+}
+.detail_Page .details_Container .details_Comparison .dimensionsAndWeight .dimensionsAndWeight_Container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+.detail_Page .details_Container .details_Comparison .dimensionsAndWeight .dimensionsAndWeight_Container p {
+  padding: 12px 0;
+}
+.detail_Page .details_Container .details_Comparison .dimensionsAndWeight .dimensionsAndWeight_Container img {
+  height: 350px;
+  margin: 0 auto;
+}
 
 h3 {
   margin: 0;
+  padding: 12px;
 }
 
 @media (min-width: 768px) {
@@ -50,6 +115,75 @@ h3 {
   }
   .detail_Page .details_Container img {
     min-height: 450px;
+  }
+  .detail_Page .details_Container .details_Comparison .price {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .detail_Page .details_Container .details_Comparison .price h3 {
+    width: 100%;
+  }
+  .detail_Page .details_Container .details_Comparison .price .price_Container {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .detail_Page .details_Container .details_Comparison .price .price_Container img {
+    min-height: 400px;
+    margin: 0 auto;
+  }
+  .detail_Page .details_Container .details_Comparison .price .price_Container h4 {
+    text-align: center;
+  }
+  .detail_Page .details_Container .details_Comparison .price .price_Container p {
+    padding: 12px 12px 24px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .detail_Page .details_Container .details_Comparison .storage .storage_Container {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .detail_Page .details_Container .details_Comparison .storage .storage_Container p {
+    padding: 0 0 12px;
+  }
+  .detail_Page .details_Container .details_Comparison .display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .detail_Page .details_Container .details_Comparison .display h3 {
+    width: 100%;
+  }
+  .detail_Page .details_Container .details_Comparison .display .display_Container {
+    width: 40%;
+    margin: 12px;
+    box-shadow: 0 0 12px;
+    padding: 12px;
+  }
+  .detail_Page .details_Container .details_Comparison .display .display_Container p {
+    padding: 12px 0;
+  }
+  .detail_Page .details_Container .details_Comparison .dimensionsAndWeight {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .detail_Page .details_Container .details_Comparison .dimensionsAndWeight h3 {
+    padding: 12px;
+    width: 100%;
+  }
+  .detail_Page .details_Container .details_Comparison .dimensionsAndWeight .dimensionsAndWeight_Container {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 12px;
+  }
+  .detail_Page .details_Container .details_Comparison .dimensionsAndWeight .dimensionsAndWeight_Container p {
+    padding: 12px 0;
+  }
+  .detail_Page .details_Container .details_Comparison .dimensionsAndWeight .dimensionsAndWeight_Container img {
+    min-height: 400px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1280px) {
@@ -74,6 +208,13 @@ h3 {
   }
   .detail_Page .details_Container img {
     width: 40%;
+    height: 500px;
+  }
+  .detail_Page .details_Container .second_Image {
+    display: block;
+  }
+  .detail_Page .details_Container .second_Image img {
+    height: 500px;
   }
   .detail_Page .details_Container .placement {
     width: 40%;
@@ -86,5 +227,94 @@ h3 {
   .detail_Page .details_Container span p {
     text-align: left;
     line-height: 36px;
+  }
+  .detail_Page .details_Container .details_Comparison .price {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .detail_Page .details_Container .details_Comparison .price h3 {
+    width: 100%;
+  }
+  .detail_Page .details_Container .details_Comparison .price .price_Container {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .detail_Page .details_Container .details_Comparison .price .price_Container img {
+    min-height: 600px;
+    margin: 0 auto;
+    width: 60%;
+  }
+  .detail_Page .details_Container .details_Comparison .price .price_Container h4 {
+    text-align: center;
+  }
+  .detail_Page .details_Container .details_Comparison .price .price_Container p {
+    padding: 12px 12px 24px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .detail_Page .details_Container .details_Comparison .storage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 16px;
+  }
+  .detail_Page .details_Container .details_Comparison .storage .storage_Container {
+    margin: 0 auto;
+    width: 25%;
+    margin: 12px;
+    box-shadow: 0 0 12px;
+    padding: 12px;
+  }
+  .detail_Page .details_Container .details_Comparison .storage .storage_Container p {
+    padding: 0 0 12px;
+  }
+  .detail_Page .details_Container .details_Comparison .display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .detail_Page .details_Container .details_Comparison .display h3 {
+    width: 100%;
+  }
+  .detail_Page .details_Container .details_Comparison .display .display_Container {
+    width: 25%;
+    margin: 12px;
+    box-shadow: 0 0 12px;
+    padding: 12px;
+  }
+  .detail_Page .details_Container .details_Comparison .display .display_Container p {
+    padding: 12px 0;
+  }
+  .detail_Page .details_Container .details_Comparison .dimensionsAndWeight {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .detail_Page .details_Container .details_Comparison .dimensionsAndWeight h3 {
+    padding: 12px;
+    width: 100%;
+  }
+  .detail_Page .details_Container .details_Comparison .dimensionsAndWeight .dimensionsAndWeight_Container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 12px;
+  }
+  .detail_Page .details_Container .details_Comparison .dimensionsAndWeight .dimensionsAndWeight_Container p {
+    padding: 12px 0;
+  }
+  .detail_Page .details_Container .details_Comparison .dimensionsAndWeight .dimensionsAndWeight_Container img {
+    min-height: 600px;
+    margin: 0 auto;
+    width: 60%;
   }
 }/*# sourceMappingURL=SingleBlogPage.css.map */
