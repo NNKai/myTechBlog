@@ -2,15 +2,23 @@ import React, { useState, useEffect } from 'react'
 import './AllReview.css'
 import { Link } from 'react-router-dom'
 import data from '../../Components/data.json'
+import axios from 'axios'
 
 const AllReview = () => {
 
     const [allData, setAllData] = useState()
 
     const filterData = () =>{ 
-        const filteredData = data.blogs
-        console.log(filteredData)
-        setAllData(filteredData)
+        
+        axios.get('http://localhost:8080/').then((data)=>{
+          console.log(data.data.blogs)
+          setAllData(data.data.blogs)
+        })
+
+    }
+
+    function handleLinkClick() {
+      window.scrollTo(0, 0);
     }
 
   useEffect (()=> {
@@ -30,7 +38,7 @@ const AllReview = () => {
                     {allData ?  allData.map((blog)=>{
                       return (
                         <div className='item_Container' key={blog.id}>
-                          <Link to={'/' + blog.id} >
+                          <Link to={'/' + blog.id}  onClick={handleLinkClick}>
                             <div className='blog_Image'>
                               <img src={blog.image} alt='blogimage'></img>
                             </div>

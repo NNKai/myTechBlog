@@ -15,6 +15,10 @@ const Home = () => {
     setFeaturedData(filteredData)
   }
 
+  function handleLinkClick() {
+    window.scrollTo(0, 0);
+  }
+
   useEffect (()=> {
     filterData()
   }, [])
@@ -38,7 +42,7 @@ const Home = () => {
                     {featuredData ?  featuredData.map((blog)=>{
                       return (
                         <div className='item_Container' key={blog.id}>
-                          <Link to={'/' + blog.id} >
+                          <Link to={'/' + blog.id} onClick={handleLinkClick}>
                             <div className='blog_Image'>
                               <img src={blog.image} alt='blogimage'></img>
                             </div>

@@ -1,0 +1,47 @@
+@keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+
+
+ 
+
+  .spinner_Container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    opacity: 0.8;
+    .icon{
+        border: 10px solid rgba(0, 0, 0, 0.2);
+        border-top-color: #3498db;
+        border-radius: 50%;
+        width: 225px;
+        height: 225px;
+        animation: spin 1s linear infinite;
+        position: relative;
+        top: 200px;
+     
+      }
+  }
+
+  @media  (min-width : 768px) {
+    .spinner_Container{
+        .icon{
+            height: 537px;
+            width: 537px;
+        }
+    }
+    
+  }
+
+  @media  (min-width : 1280px) {
+    .spinner_Container{
+        .icon{
+            height: 500px;
+            width: 500px;
+        }
+    }
+    
+  }
+  

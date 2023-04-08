@@ -11,15 +11,19 @@ const Sidebar = () => {
   const Games = "Games"
   const NewGagets = "New Gadgets"
 
+  function handleLinkClick() {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <div className='sidebar'>
         <ul>
-            <Link to={'/category/' + Laptops} ><li>Laptops</li></Link>
-            <Link to={'/category/' + SmartPhones}><li>Smart Phones</li></Link>
-            <Link to={'/category/' + Accessories}><li>Accessories</li></Link>
+            <Link to={'/category/' + Laptops} onClick={handleLinkClick}><li>Laptops</li></Link>
+            <Link to={'/category/' + SmartPhones} onClick={handleLinkClick}><li>Smart Phones</li></Link>
+            <Link to={'/category/' + Accessories} onClick={handleLinkClick}><li>Accessories</li></Link>
             {/* <Link to={'/category/' + BuildYourPC}><li>Build Your PC</li></Link>
             <Link to={'/category/' + Games}><li>Games</li></Link> */}
-           < Link to={'/category/' + NewGagets}><li>New Gadgets</li></Link>
+           < Link to={'/category/' + NewGagets} onClick={handleLinkClick}><li>New Gadgets</li></Link>
         </ul>
     </div>
   )

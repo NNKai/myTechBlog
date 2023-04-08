@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import data from '../../Components/data.json'
 import './SingleBlogPage.css'
+import axios from 'axios'
 
 const SingleBlogPage = () => {
     const params = useParams()
@@ -9,10 +10,14 @@ const SingleBlogPage = () => {
     const [comparison, setComparison] = useState()
 
     const filterData = () => {
-        let filteredBlog = data.blogs.find(ans => ans.id === params.id)
-        console.log(filteredBlog.Comparison)
-        setDetails(filteredBlog)
-        setComparison(filteredBlog.Comparison)
+
+        axios.get('http://localhost:8080/').then((data)=>{
+          console.log(data.data.blogs)
+          const filteredBlog = data.data.blogs.find(data => data.id === params.id)
+          setDetails(filteredBlog)
+          setComparison(filteredBlog.Comparison)
+        })
+        
     }
 
     useEffect (()=>{
@@ -41,8 +46,8 @@ const SingleBlogPage = () => {
               <div className='dimensionsAndWeight_Container'>
               <img src={data.image} alt='alt'></img>
               <h4>{data.name}</h4>
-              <p>Dimensions: {data.dimensions}</p>
-              <p>Weight: {data.weight}</p>
+              <p>{data.dimensions}</p>
+              <p>{data.bodyWeight}</p>
               </div>
               )
             })}

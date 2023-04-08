@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './CategoryPage.css'
 import { Link, useParams } from 'react-router-dom'
 import data from '../../Components/data.json'
+import axios from 'axios'
 
 
 const CategoryPage = () => {
@@ -9,9 +10,16 @@ const CategoryPage = () => {
     const [allData, setAllData] = useState()
 
     const filterData = () =>{ 
-        const filteredData = data.blogs.filter(data => data.category === params.id)
-        console.log(filteredData)
-        setAllData(filteredData)
+        
+        axios.get('http://localhost:8080/').then((data)=>{
+          console.log(data.data.blogs)
+          const filteredData = data.data.blogs.filter(data => data.category === params.id)
+          setAllData(filteredData)
+        })
+    }
+
+    function handleLinkClick() {
+      window.scrollTo(0, 0);
     }
 
   useEffect (()=> {
@@ -31,7 +39,7 @@ const CategoryPage = () => {
                     {allData ?  allData.map((blog)=>{
                       return (
                         <div className='item_Container' key={blog.id}>
-                          <Link to={'/' + blog.id} >
+                          <Link to={'/' + blog.id} onClick={handleLinkClick}>
                             <div className='blog_Image'>
                               <img src={blog.image} alt='blogimage'></img>
                             </div>

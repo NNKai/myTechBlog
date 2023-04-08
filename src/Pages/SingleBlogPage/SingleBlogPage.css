@@ -1,5 +1,6 @@
 h4 {
   font-size: 14px;
+  text-align: center;
 }
 
 .detail_Page {
@@ -187,6 +188,9 @@ h3 {
   }
 }
 @media (min-width: 1280px) {
+  h4 {
+    font-size: 18px;
+  }
   .detail_Page {
     top: 100px;
     margin-bottom: 100px;
@@ -222,7 +226,12 @@ h3 {
     background-color: black;
   }
   .detail_Page .details_Container span {
-    width: 80%;
+    width: 60%;
+    box-shadow: 0 0 12px black;
+    background-color: midnightblue;
+    margin: 24px 0;
+    padding: 0 24px;
+    color: white;
   }
   .detail_Page .details_Container span p {
     text-align: left;
@@ -264,6 +273,7 @@ h3 {
     padding-bottom: 16px;
   }
   .detail_Page .details_Container .details_Comparison .storage .storage_Container {
+    background-color: palegreen;
     margin: 0 auto;
     width: 25%;
     margin: 12px;
@@ -287,6 +297,7 @@ h3 {
     margin: 12px;
     box-shadow: 0 0 12px;
     padding: 12px;
+    background-color: yellowgreen;
   }
   .detail_Page .details_Container .details_Comparison .display .display_Container p {
     padding: 12px 0;
